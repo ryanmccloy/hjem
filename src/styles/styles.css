@@ -9,13 +9,25 @@
 /* CUSTOM BASE STYLES */
 
 body {
-  @apply bg-primary text-secondary font-secondary text-xs;
+  @apply bg-secondary text-primary font-secondary text-xs;
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 h1 {
-  @apply font-primary;
+  @apply font-primary text-9xl;
 }
 
 h2 {
-  @apply font-primary;
+  @apply font-primary text-5xl;
+}
+
+h3 {
+  @apply font-medium;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary; /* Tailwind utility for active bullet color */
 }

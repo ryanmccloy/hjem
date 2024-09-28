@@ -3,9 +3,9 @@ import { CiFacebook, CiInstagram, CiLocationOn } from "react-icons/ci";
 const iconStyle =
   "text-[30px] hover:scale-110  hover:rotate-12  transition-all duration-300 ";
 
-function Socials() {
+function Socials({ hidden = false }) {
   return (
-    <div className="flex gap-[10px] ">
+    <div className={`flex gap-[10px] ${hidden && "hidden"} `}>
       <a
         href="https://www.instagram.com/hjem.belfast/"
         target="_blank"
@@ -33,8 +33,3 @@ function Socials() {
 }
 
 export default Socials;
-
-// React icons - socials componenet
-// Navbar component
-// Respsonsive landing page
-// Git

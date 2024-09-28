@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#F7F1E1",
-        secondary: "#BC6C25",
+        primary: "#BC6C25",
+        secondary: "#F7F1E1",
       },
       fontFamily: {
         primary: ["Bebas Neue", "cursive"],

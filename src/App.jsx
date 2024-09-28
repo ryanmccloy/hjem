@@ -1,5 +1,5 @@
 import LandingPage from "./sections/landingpage/LandingPage";
-import AboutUs from "./sections/aboutus/AboutUs";
+import AboutUs from "./sections/aboutus/AboutUsMobile";
 import Menu from "./sections/menu/Menu";
 import Gallery from "./sections/gallery/Gallery";
 import CafeEvents from "./sections/cafeevents/CafeEvents";
@@ -8,28 +8,19 @@ import Footer from "./sections/footer/Footer";
 function App() {
   return (
     <>
-      <header>
-        <LandingPage />
-      </header>
+      <LandingPage />
 
       <main>
-        <section>
-          <AboutUs />
-        </section>
-        <section>
-          <Menu />
-        </section>
-        <section>
-          <Gallery />
-        </section>
-        <section>
-          <CafeEvents />
-        </section>
+        <AboutUs />
+
+        <Menu />
+
+        <Gallery />
+
+        <CafeEvents />
       </main>
 
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 }

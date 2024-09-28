@@ -1,5 +1,7 @@
+import AboutUsMobile from "./AboutUsMobile";
+
 function AboutUs() {
-  return <div>About Us</div>;
+  return <AboutUsMobile />;
 }
 
 export default AboutUs;

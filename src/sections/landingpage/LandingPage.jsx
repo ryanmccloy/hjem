@@ -1,14 +1,19 @@
 import Socials from "../../components/Socials";
+import NavBar from "./NavBar";
 
 function LandingPage() {
   return (
-    <section className="h-screen-dvh flex flex-col">
+    <section className="h-screen-dvh flex flex-col overflow-hidden">
       <header className="pt-[15px] px-[15px] pb-[30px]">
-        <h1 className="text-9xl">HJEM.</h1>
-        <p className="pb-[30px]">
-          Noun. hjem n - a home, place of origin or belonging.
-        </p>
-        <Socials />
+        <div>
+          <h1 className="">HJEM.</h1>
+          <p className="pb-[30px]">
+            Noun. hjem n - a home, place of origin or belonging.
+          </p>
+          <Socials hidden={true} />
+        </div>
+
+        <NavBar />
       </header>
 
       <div className="flex-1 relative">
