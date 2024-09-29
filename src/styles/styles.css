@@ -31,3 +31,26 @@ h3 {
 .swiper-pagination-bullet-active {
   @apply bg-primary; /* Tailwind utility for active bullet color */
 }
+
+/* Allow images to span multiple rows for a masonry-like effect */
+.gallery-grid
+  > div:nth-child(3n):not(:nth-last-child(1)):not(:nth-last-child(2)) {
+  grid-row: span 2; /* Images with this class will span 2 rows, except the last two */
+}
+
+.gallery-grid
+  > div:nth-child(5n):not(:nth-last-child(1)):not(:nth-last-child(2)) {
+  grid-row: span 3; /* Some images can span 3 rows, except the last two */
+}
+
+/* Prevent the second-to-last image from spanning */
+.gallery-grid > div:nth-last-child(2) {
+  grid-row: span 1; /* Ensure the second-to-last image only spans 1 row */
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+  }
+}

@@ -1,10 +1,11 @@
-import Carousel from "./Carousel";
+import ImageGallery from "./ImageGallery";
 
 function Gallery() {
   return (
-    <section id="gallery" className="h-screen-dvh min-h-[800px] ">
-      <h2 className="pt-[30px] pl-[15px]">GALLERY.</h2>
-      <Carousel />
+    <section id="gallery" className="flex flex-col">
+      <h2 className="py-[30px] pl-[15px] self-start">GALLERY.</h2>
+
+      <ImageGallery />
     </section>
   );
 }
