@@ -15,7 +15,7 @@ function NavBar() {
           <a href="#gallery">Gallery</a>
         </li>
         <li className={navStyle}>
-          <a href="#events">Events</a>
+          <a href="#cafeevents">Events</a>
         </li>
       </ul>
     </nav>

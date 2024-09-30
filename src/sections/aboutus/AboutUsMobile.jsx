@@ -1,4 +1,4 @@
-import AboutUsMobileParahraphs from "./AboutUsMobileParagraphs";
+import AboutUsMobileParagraphs from "./AboutUsMobileParagraphs";
 import Socials from "../../components/Socials";
 
 function AboutUsMobile() {
@@ -8,7 +8,7 @@ function AboutUsMobile() {
         <h2>ABOUT US.</h2>
         <Socials />
       </header>
-      <AboutUsMobileParahraphs />
+      <AboutUsMobileParagraphs />
     </section>
   );
 }

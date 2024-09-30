@@ -3,7 +3,10 @@ import NavBar from "./NavBar";
 
 function LandingPage() {
   return (
-    <section className="h-screen-dvh flex flex-col overflow-hidden">
+    <section
+      id="landing"
+      className="h-screen-dvh flex flex-col overflow-hidden"
+    >
       <header className="pt-[15px] px-[15px] pb-[30px]">
         <div>
           <h1 className="">HJEM.</h1>

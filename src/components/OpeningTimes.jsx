@@ -1,7 +1,7 @@
-function OpeningTimes() {
+function OpeningTimes({ where }) {
   return (
     <div className="flex flex-col gap-[15px] min-w-max h-max">
-      <h3>Opening Times</h3>
+      {where === "landingpage" && <h3>Opening Times</h3>}
 
       <ul className="font-light">
         <li>Monday: 8am-4pm</li>

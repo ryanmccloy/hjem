@@ -1,9 +1,10 @@
 import { CiFacebook, CiInstagram, CiLocationOn } from "react-icons/ci";
 
-const iconStyle =
-  "text-[30px] hover:scale-110  hover:rotate-12  transition-all duration-300 ";
+function Socials({ hidden = false, where }) {
+  const iconStyle = ` ${
+    where === "footer" ? "text-[20px]" : "text-[30px]"
+  } hover:scale-110  hover:rotate-12  transition-all duration-300 `;
 
-function Socials({ hidden = false }) {
   return (
     <div className={`flex gap-[10px] ${hidden && "hidden"} `}>
       <a
