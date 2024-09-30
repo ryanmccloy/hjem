@@ -1,5 +1,5 @@
 const navStyle =
-  "border border-primary p-1 text-center rounded w-1/5 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all transition-300";
+  "border border-primary p-1 text-center rounded w-1/5 hover:bg-primary hover:text-secondary hover:cursor-pointer transition-all duration-300";
 
 function NavBar() {
   return (
