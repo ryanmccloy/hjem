@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
+import AOS from "aos";
+
 const ScrollButton = ({ galleryRef, eventsRef }) => {
   const [showButton, setShowButton] = useState(false);
   const [isGalleryInView, setIsGalleryInView] = useState(false);
@@ -42,10 +44,20 @@ const ScrollButton = ({ galleryRef, eventsRef }) => {
     setShowButton(isGalleryInView && !isEventsInView);
   }, [isGalleryInView, isEventsInView]);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      delay: 100,
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     showButton && (
       <div
-        className="flex justify-center fixed bottom-[15px] left-0 right-0"
+        className={`fixed bottom-[15px] left-0 right-0 flex justify-center transition-opacity duration-500 `}
         data-aos="fade-up"
       >
         <button className="bg-primary mb-[30px] text-secondary p-2 rounded-full border border-primary hover:bg-secondary hover:text-primary transition-colors duration-300">

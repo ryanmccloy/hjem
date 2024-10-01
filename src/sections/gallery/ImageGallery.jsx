@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "aos/dist/aos.css";
 import AOS from "aos";
 
 function ImageGallery() {
@@ -29,7 +28,7 @@ function ImageGallery() {
       offset: 100, // Starts when 100px of the element is in view
       delay: 100, // Delay between each image animation (stagger effect)
       once: false, // Animation happens only once, no repeat on scroll up
-      mirror: true, // Do not animate on scroll back up for a clean look
+      mirror: false, // Do not animate on scroll back up for a clean look
     });
   }, []);
 

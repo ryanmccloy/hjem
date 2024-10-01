@@ -1,42 +1,43 @@
+import { useQuery } from "@tanstack/react-query";
+import { square } from "ldrs";
+
+import { fetchDrinksByCategory } from "../../utils/fetchers";
+import { HOT_COFFEES, MENU_LOADING_COLOUR } from "../../utils/constants";
+
 import MenuItem from "./MenuItem";
 
-const hotCoffees = {
-  1: {
-    name: "Double Espresso",
-    price: "3",
-  },
-  2: {
-    name: "Americano",
-    price: "3",
-  },
-  3: {
-    name: "Cappuccino",
-    price: "3.5",
-  },
-  4: {
-    name: "Cortado",
-    price: "3.3",
-  },
-  5: {
-    name: "Flat White",
-    price: "3.5",
-  },
-  6: {
-    name: "Latte",
-    price: "3.5",
-  },
-  7: {
-    name: "Chai Latte",
-    price: "3",
-  },
-};
-
 function HotCoffee({ itemGap }) {
+  // React Query Call
+  const {
+    data: drinks,
+    error,
+    isLoading,
+  } = useQuery({
+    queryKey: ["drinks_menu", HOT_COFFEES],
+    queryFn: () => fetchDrinksByCategory(HOT_COFFEES),
+  });
+
+  // Loading animation
+  square.register();
+  if (isLoading)
+    return (
+      <l-square size="30" stroke="2" color={MENU_LOADING_COLOUR}></l-square>
+    );
+
+  // Error state
+  if (error) return <div>Error loading hot coffees</div>;
+
+  // Check if drinks data is present before rendering
+  if (!drinks) return null;
+
   return (
     <div className={`flex flex-col gap-[${itemGap}]`}>
-      {Object.values(hotCoffees).map((item, index) => (
-        <MenuItem key={index} name={item.name} price={item.price} />
-      ))}
+      {drinks.map(
+        (drink) =>
+          drink.is_available && (
+            <MenuItem key={drink.id} name={drink.name} price={drink.price} />
+          )
+      )}
     </div>
   );
 }

@@ -1,6 +1,4 @@
-import { useRef, useEffect } from "react";
-import "aos/dist/aos.css";
-import AOS from "aos";
+import { useRef } from "react";
 
 import ImageGallery from "./ImageGallery";
 import ScrollButton from "./ScrollButton";
@@ -8,16 +6,6 @@ import ScrollButton from "./ScrollButton";
 function Gallery() {
   const galleryRef = useRef(null);
   const eventsRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      delay: 100,
-      once: false,
-      mirror: true,
-    });
-  }, []);
 
   return (
     <section
