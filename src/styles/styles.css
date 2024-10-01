@@ -9,7 +9,7 @@
 /* CUSTOM BASE STYLES */
 
 body {
-  @apply bg-secondary text-primary font-secondary text-xs;
+  @apply bg-secondary text-primary font-secondary text-xs md:text-base lg:text-lg;
 }
 
 html {
@@ -17,11 +17,11 @@ html {
 }
 
 h1 {
-  @apply font-primary text-9xl;
+  @apply font-primary text-9xl lg:text-[160px];
 }
 
 h2 {
-  @apply font-primary text-5xl;
+  @apply font-primary text-5xl md:text-6xl;
 }
 
 h3 {

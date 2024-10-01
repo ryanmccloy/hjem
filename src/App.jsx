@@ -1,5 +1,5 @@
 import LandingPage from "./sections/landingpage/LandingPage";
-import AboutUs from "./sections/aboutus/AboutUsMobile";
+import AboutUs from "./sections/aboutus/AboutUs";
 import Menu from "./sections/menu/Menu";
 import Gallery from "./sections/gallery/Gallery";
 import CafeEvents from "./sections/cafeevents/CafeEvents";

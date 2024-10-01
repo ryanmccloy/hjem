@@ -1,12 +1,17 @@
 import { CiFacebook, CiInstagram, CiLocationOn } from "react-icons/ci";
 
-function Socials({ hidden = false, where }) {
+function Socials({ size }) {
+  const sizes = {
+    sm: "text-[20px]",
+    md: "text-[30px]",
+  };
+
   const iconStyle = ` ${
-    where === "footer" ? "text-[20px]" : "text-[30px]"
+    sizes[size] || "text-[30px]"
   } hover:scale-110  hover:rotate-12  transition-all duration-300 `;
 
   return (
-    <div className={`flex gap-[10px] ${hidden && "hidden"} `}>
+    <div className="flex gap-[10px]">
       <a
         href="https://www.instagram.com/hjem.belfast/"
         target="_blank"

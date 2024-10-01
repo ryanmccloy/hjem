@@ -9,11 +9,11 @@ function Footer() {
         <h2>
           <a href="#landing">HJEM.</a>
         </h2>
-        <Socials where="footer" />
+        <Socials size="sm" />
       </div>
 
       <Address />
-      <OpeningTimes where="footer" />
+      <OpeningTimes size="footer" />
     </footer>
   );
 }
