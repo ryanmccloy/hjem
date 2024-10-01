@@ -3,7 +3,7 @@ import AboutUsMobile from "./AboutUsMobile";
 
 function AboutUs() {
   return (
-    <section>
+    <section id="aboutus">
       <div className="md:hidden">
         <AboutUsMobile />
       </div>

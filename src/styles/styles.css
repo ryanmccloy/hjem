@@ -9,7 +9,7 @@
 /* CUSTOM BASE STYLES */
 
 body {
-  @apply bg-secondary text-primary font-secondary text-xs md:text-base lg:text-lg;
+  @apply bg-secondary text-primary font-secondary text-xs md:text-sm lg:text-base;
 }
 
 html {
