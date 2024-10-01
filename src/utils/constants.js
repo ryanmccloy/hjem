@@ -8,3 +8,4 @@ export const SOFT_DRINKS = "soft_drink";
 
 // Loading animation colour
 export const MENU_LOADING_COLOUR = "#F7F1E1";
+export const EVENTS_LOADING_COLOUR = "#BC6C25";

@@ -12,3 +12,14 @@ export const fetchDrinksByCategory = async (category) => {
 
   return drinks;
 };
+
+export const fetchCafeEvents = async () => {
+  let { data: cafeEvents, error } = await supabase
+    .from("cafe_events")
+    .select("*")
+    .order("date", { ascending: true });
+
+  if (error) throw error;
+
+  return cafeEvents;
+};
