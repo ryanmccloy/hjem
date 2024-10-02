@@ -5,7 +5,7 @@ function LandingPage() {
   return (
     <section
       id="landing"
-      className="h-screen-dvh flex flex-col overflow-hidden md:flex-row"
+      className="h-screen-dvh min-h-[650px] flex flex-col overflow-hidden md:flex-row"
     >
       <Header />
       <LandingImage />

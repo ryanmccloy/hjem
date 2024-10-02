@@ -1,7 +1,9 @@
 function MenuParagraphs() {
   return (
     <div className="flex flex-col gap-[30px]">
-      <p>Visit us in store to try any of our seasonal or signature drinks :)</p>
+      <p className="xl:hidden">
+        Visit us in store to try any of our seasonal or signature drinks :)
+      </p>
       <p>
         Our quality coffee is supplied by a local roaster, and we also serve a
         monthly &quot;guest blend&quot; filter coffee, alongside proper

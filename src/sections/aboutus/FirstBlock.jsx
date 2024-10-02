@@ -2,7 +2,7 @@ function FirstBlock() {
   return (
     <div className="flex gap-[30px] lg:gap-[60px]">
       <div className=" pl-[30px] flex flex-col gap-[30px] max-w-[40%]">
-        <h2>ABOUT US.</h2>
+        <h2 className="xl:pb-[30px]">ABOUT US.</h2>
         <div className="flex flex-col  gap-[30px] ">
           <p>
             With a nod to Scandinavian interiors + design, the ethos behind
