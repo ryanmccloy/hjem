@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import AOS from "aos";
-
 function ImageGallery() {
   const images = [
     "/images/gallery1.jpg",
@@ -20,17 +17,6 @@ function ImageGallery() {
     "/images/gallery15.webp",
     "/images/gallery16.heic",
   ];
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // Animation lasts 800ms for a smooth effect
-      easing: "ease-in-out", // Smooth easing effect
-      offset: 100, // Starts when 100px of the element is in view
-      delay: 100, // Delay between each image animation (stagger effect)
-      once: true, // Animation happens only once, no repeat on scroll up
-      mirror: false, // Do not animate on scroll back up for a clean look
-    });
-  }, []);
 
   return (
     <div id="gallery">
