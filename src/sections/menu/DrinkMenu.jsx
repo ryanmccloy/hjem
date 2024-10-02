@@ -16,7 +16,7 @@ function DrinkMenu() {
         <Extras itemGap={itemGap} />
       </div>
 
-      <div className="w-[150px] flex flex-col gap-[30px]">
+      <div className="w-[140px] md:w-[250px] flex flex-col gap-[30px]">
         <Tea itemGap={itemGap} />
         <Chocolate itemGap={itemGap} />
         <SoftDrinks itemGap={itemGap} />
