@@ -11,22 +11,26 @@ function NavBar() {
     >
       <ul className="flex justify-between md:gap-[15px]">
         <li className={navStyle}>
-          <a href="#aboutus" className={aStyle}>
+          <a href="#aboutus" aria-label="About us section" className={aStyle}>
             About Us
           </a>
         </li>
         <li className={navStyle}>
-          <a href="#menu" className={aStyle}>
+          <a href="#menu" aria-label="Cafe menu section" className={aStyle}>
             Menu
           </a>
         </li>
         <li className={navStyle}>
-          <a href="#gallery" className={aStyle}>
+          <a href="#gallery" aria-label="Cafe image gallery" className={aStyle}>
             Gallery
           </a>
         </li>
         <li className={navStyle}>
-          <a href="#cafeevents" className={aStyle}>
+          <a
+            href="#cafeevents"
+            aria-label="Upcoming cafe events"
+            className={aStyle}
+          >
             Events
           </a>
         </li>
