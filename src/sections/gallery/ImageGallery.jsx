@@ -27,7 +27,7 @@ function ImageGallery() {
       easing: "ease-in-out", // Smooth easing effect
       offset: 100, // Starts when 100px of the element is in view
       delay: 100, // Delay between each image animation (stagger effect)
-      once: false, // Animation happens only once, no repeat on scroll up
+      once: true, // Animation happens only once, no repeat on scroll up
       mirror: false, // Do not animate on scroll back up for a clean look
     });
   }, []);
