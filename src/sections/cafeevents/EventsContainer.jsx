@@ -30,7 +30,7 @@ function EventsContainer() {
   if (!cafeEvents) return <h3>No upcoming cafe event :( </h3>;
 
   return (
-    <div className="flex gap-[15px] flex-wrap">
+    <div className="grid grid-cols-2 gap-[15px] md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
       {cafeEvents.map((event) => (
         <Event
           key={event.id}

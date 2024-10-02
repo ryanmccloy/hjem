@@ -10,10 +10,12 @@ function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative flex flex-col pb-[15px]"
+      className="relative flex flex-col pb-[15px] md:pb-[30px]"
       ref={galleryRef}
     >
-      <h2 className="py-[30px] pl-[15px] self-start">GALLERY.</h2>
+      <h2 className="py-[30px] pl-[15px] self-start md:py-[60px] pl-[30px]">
+        GALLERY.
+      </h2>
       <ImageGallery />
 
       {/* ScrollButton component */}

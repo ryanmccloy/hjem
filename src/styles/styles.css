@@ -12,6 +12,10 @@ body {
   @apply bg-secondary text-primary font-secondary text-xs md:text-sm lg:text-base;
 }
 
+p {
+  @apply leading-relaxed tracking-wider;
+}
+
 html {
   @apply scroll-smooth;
 }
@@ -26,10 +30,6 @@ h2 {
 
 h3 {
   @apply font-medium;
-}
-
-.swiper-pagination-bullet-active {
-  @apply bg-primary; /* Tailwind utility for active bullet color */
 }
 
 /* Allow images to span multiple rows for a masonry-like effect */
