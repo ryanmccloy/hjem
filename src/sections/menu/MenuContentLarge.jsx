@@ -3,10 +3,10 @@ import MenuParagraphs from "./MenuParagraphs";
 
 function MenuContentLarge() {
   return (
-    <div className=" h-[100%] flex gap-[60px]">
+    <div className=" h-full flex gap-[60px]">
       <div className=" w-1/6 relative overflow-hidden">
         <img
-          className="absolute inset-0  w-full h-full object-cover "
+          className="absolute inset-0 h-full  w-full  object-cover "
           src="/images/menularge.jpg"
           alt="Coffee on a bench"
         />

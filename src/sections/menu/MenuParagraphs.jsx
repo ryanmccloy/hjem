@@ -56,18 +56,6 @@ function MenuParagraphs() {
           <p>Tray-bakes</p>
         </li>
       </ul>
-      {/* <ul className="list-disc">
-        <li>
-          Porridge with fresh fruit and honey / Overnight oats (a range of
-          options)
-        </li>
-        <li>Rustic sourdough toast with jam, nut butters etc.</li>
-        <li>Soups</li>
-        <li>Toasties with a range of fillings</li>
-        <li>Pancakes with fresh fruit, cream, and Canadian maple syrup</li>
-        <li>Salads</li>
-        <li>Tray-bakes</li>
-      </ul> */}
     </div>
   );
 }

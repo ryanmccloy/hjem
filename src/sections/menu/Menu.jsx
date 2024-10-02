@@ -3,7 +3,7 @@ import MenuContentLarge from "./MenuContentLarge";
 
 function Menu() {
   return (
-    <section id="menu" className="min-h-[800px]  bg-primary text-secondary">
+    <section id="menu" className="min-h-fit  bg-primary text-secondary ">
       <div className="xl:hidden">
         <MenuContent />
       </div>
