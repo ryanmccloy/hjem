@@ -10,7 +10,7 @@ function OpeningTimes({ where }) {
         <li>Thursday: 8am-4pm</li>
         <li>Friday: 8am-4pm</li>
         <li>Saturday: 8am-4pm</li>
-        <li>Sunday: 8am-4pm</li>
+        <li>Sunday: 10am-3pm</li>
       </ul>
     </div>
   );
